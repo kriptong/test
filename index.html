@@ -8,13 +8,13 @@
   <title>ЛИЦА — студия массажа и косметологии</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="topline">
     <span class="topline-note"><span class="status-dot"></span> Пространство заботы о лице и теле</span>
-    <a href="#contacts" class="topline-link">Санкт-Петербург <span>·</span> Омск</a>
+    <a href="#contacts" class="topline-link" id="topline-city">Выбрана студия: Санкт-Петербург</a>
   </div>
 
   <header class="header" id="top">
@@ -52,7 +52,7 @@
       <div class="hero-visual">
         <img src="assets/hero-massage.jpg" alt="Мастер бережно выполняет массаж лица в светлой студии" fetchpriority="high">
         <div class="photo-label"><span class="photo-label-icon">✳</span><span>Красота<br>ручной работы</span></div>
-        <div class="hero-caption"><span>01 / 03</span><span>Лицо · тело · баланс</span></div>
+        <div class="hero-caption"><span>Ручные техники</span><span>Лицо · тело · уход</span></div>
       </div>
       <div class="hero-side-note">ПРИКОСНОВЕНИЕ<br>К СЕБЕ</div>
     </section>
@@ -91,32 +91,32 @@
         <div class="service-grid">
           <article class="service-card" data-category="face">
             <div class="service-top"><span class="service-tag">ЛИЦО · ПЕРВОЕ ЗНАКОМСТВО</span><span class="service-arrow">↗</span></div>
-            <div class="service-symbol symbol-face">◡</div><h3>Массаж лица</h3><p>Ручная техника для расслабления и ухода за лицом. Специалист поможет выбрать подходящий формат.</p>
+            <div class="service-symbol symbol-face" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M12 22c0-9 5-15 12-15s12 6 12 15-5 17-12 17-12-8-12-17Z"/><path d="M18 24h.1M30 24h.1M19 30c3 2 7 2 10 0M8 18l3-2m29 2-3-2"/></svg></div><h3>Массаж лица</h3><p>Ручная техника для расслабления и ухода за лицом. Специалист поможет выбрать подходящий формат.</p>
             <div class="service-meta"><span>60 минут</span><strong>от 2 900 ₽</strong></div><button class="service-book open-booking" type="button">Записаться <span>↗</span></button>
           </article>
           <article class="service-card featured-card" data-category="face body">
             <div class="service-top"><span class="service-tag">ЛИЦО ИЛИ ТЕЛО · ПЕРВОЕ ЗНАКОМСТВО</span><span class="service-arrow">↗</span></div>
-            <div class="service-symbol symbol-sculpt">✳</div><h3>Ручная пластика</h3><p>Более интенсивная ручная техника. Перед визитом можно обсудить запрос и зону работы.</p>
+            <div class="service-symbol symbol-sculpt" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 15c5-5 10-5 16 0s11 5 16 0M8 24c5-5 10-5 16 0s11 5 16 0M8 33c5-5 10-5 16 0s11 5 16 0"/></svg></div><h3>Ручная пластика</h3><p>Более интенсивная ручная техника. Перед визитом можно обсудить запрос и зону работы.</p>
             <div class="service-meta"><span>60 минут</span><strong>от 3 700 ₽</strong></div><button class="service-book open-booking" type="button">Записаться <span>↗</span></button>
           </article>
           <article class="service-card" data-category="face body">
             <div class="service-top"><span class="service-tag">ЛИЦО ИЛИ ТЕЛО · ПЕРВОЕ ЗНАКОМСТВО</span><span class="service-arrow">↗</span></div>
-            <div class="service-symbol symbol-body">〰</div><h3>Скульптура</h3><p>Глубокая ручная проработка лица или тела — с учётом ваших ощущений и выбранной зоны.</p>
+            <div class="service-symbol symbol-body" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 6c-6 4-9 9-9 15 0 5 4 7 4 11 0 4-3 7-6 10m15-36c6 4 9 9 9 15 0 5-4 7-4 11 0 4 3 7 6 10M18 22h12M18 31h12"/></svg></div><h3>Скульптура</h3><p>Глубокая ручная проработка лица или тела — с учётом ваших ощущений и выбранной зоны.</p>
             <div class="service-meta"><span>60 минут</span><strong>от 4 100 ₽</strong></div><button class="service-book open-booking" type="button">Записаться <span>↗</span></button>
           </article>
           <article class="service-card" data-category="body">
             <div class="service-top"><span class="service-tag">ТЕЛО · РАССЛАБЛЕНИЕ</span><span class="service-arrow">↗</span></div>
-            <div class="service-symbol symbol-relax">⌁</div><h3>Массаж спины</h3><p>Отдельная процедура для тех, кто хочет уделить внимание спине и верхней части тела.</p>
+            <div class="service-symbol symbol-relax" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M12 8c4 4 4 8 0 12s-4 8 0 12 4 8 0 12m12-36c4 4 4 8 0 12s-4 8 0 12 4 8 0 12m12-36c4 4 4 8 0 12s-4 8 0 12 4 8 0 12"/></svg></div><h3>Массаж спины</h3><p>Отдельная процедура для тех, кто хочет уделить внимание спине и верхней части тела.</p>
             <div class="service-meta"><span>40 минут</span><strong>3 000 ₽</strong></div><button class="service-book open-booking" type="button">Записаться <span>↗</span></button>
           </article>
           <article class="service-card" data-category="face">
             <div class="service-top"><span class="service-tag">ЛИЦО · ДОПОЛНИТЕЛЬНАЯ ТЕХНИКА</span><span class="service-arrow">↗</span></div>
-            <div class="service-symbol symbol-buccal">◉</div><h3>Буккальный массаж</h3><p>Интраоральная техника. Перед записью уточните у специалиста, подходит ли она вам.</p>
+            <div class="service-symbol symbol-buccal" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><path d="M18 21h.1M30 21h.1M18 29c3 3 9 3 12 0M14 34c3-3 5-4 10-4s7 1 10 4"/></svg></div><h3>Буккальный массаж</h3><p>Интраоральная техника. Перед записью уточните у специалиста, подходит ли она вам.</p>
             <div class="service-meta"><span>20 минут</span><strong>1 900 ₽</strong></div><button class="service-book open-booking" type="button">Уточнить и записаться <span>↗</span></button>
           </article>
           <article class="service-card" data-category="care face">
             <div class="service-top"><span class="service-tag">УХОД · ПО ЗАПРОСУ</span><span class="service-arrow">↗</span></div>
-            <div class="service-symbol symbol-care">✧</div><h3>Косметологический уход</h3><p>Маски, пилинги и аппаратные методики. Состав ухода подбирается после консультации.</p>
+            <div class="service-symbol symbol-care" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 39C12 31 7 24 11 16c3-6 9-5 13 1 4-6 10-7 13-1 4 8-1 15-13 23Z"/><path d="M24 17v19m0-10-7-5m7 9 7-6"/></svg></div><h3>Косметологический уход</h3><p>Маски, пилинги и аппаратные методики. Состав ухода подбирается после консультации.</p>
             <div class="service-meta"><span>По длительности услуги</span><strong>от 1 100 ₽</strong></div><button class="service-book open-booking" type="button">Уточнить и записаться <span>↗</span></button>
           </article>
         </div>
@@ -125,7 +125,7 @@
     </section>
 
     <section class="first-visit page-wrap" id="how">
-      <div class="visit-visual"><img src="assets/hero-massage.jpg" alt="Спокойная атмосфера кабинета массажа" loading="lazy"><div class="visit-stamp">время<br><em>для себя</em></div></div>
+      <div class="visit-visual"><img src="assets/studio-detail.jpg" alt="Светлый кабинет массажа с натуральными материалами и мягким освещением" loading="lazy"><div class="visit-stamp">время<br><em>для себя</em></div></div>
       <div class="visit-copy"><div class="section-kicker">03 — Ваш первый визит</div><h2>Без спешки.<br><em>С вниманием.</em></h2><p class="visit-lead">Знакомство со студией — это не экзамен по массажу. Не нужно заранее знать название техники: достаточно рассказать, чего вам хочется.</p>
         <ol class="visit-steps"><li><span>1</span><div><strong>Расскажите о запросе</strong><p>Администратор поможет выбрать филиал и направление.</p></div></li><li><span>2</span><div><strong>Обсудите процедуру</strong><p>Специалист ответит на вопросы и согласует комфортный формат.</p></div></li><li><span>3</span><div><strong>Выберите удобное время</strong><p>Стоимость и длительность известны до подтверждения записи.</p></div></li></ol>
         <button class="button button-dark open-booking" type="button">Записаться на знакомство <span aria-hidden="true">↗</span></button>
@@ -139,15 +139,15 @@
     </div></section>
 
     <section class="section page-wrap reviews-section">
-      <div class="section-kicker">05 — Репутация</div><div class="review-row"><div><h2>Слово —<br><em>нашим гостям.</em></h2><p class="section-lead">Посмотрите актуальные отзывы на Яндекс Картах перед визитом.</p><a class="button button-outline" href="https://yandex.ru/maps/org/li_tsa/54770150446/" target="_blank" rel="noopener noreferrer">Отзывы на Яндекс Картах <span aria-hidden="true">↗</span></a></div><div class="review-note"><span class="quote-mark">“</span><p>Выбирайте студию, специалиста и процедуру с опорой на свой запрос. Если сомневаетесь — сначала задайте вопрос администратору.</p><span class="review-caption">БЕРЕЖНО · ПОНЯТНО · ПО ВАШЕМУ ЗАПРОСУ</span></div></div>
+      <div class="section-kicker">05 — Репутация</div><div class="review-row"><div><h2>Впечатления<br><em>гостей студии.</em></h2><p class="section-lead">Читайте отзывы на Яндекс Картах и выбирайте студию, куда удобно приехать.</p><a class="button button-outline" href="https://yandex.ru/maps/org/li_tsa/54770150446/" target="_blank" rel="noopener noreferrer">Отзывы на Яндекс Картах <span aria-hidden="true">↗</span></a></div><div class="review-note"><span class="review-overline">ОТКРЫТЫЕ ОТЗЫВЫ · ЯНДЕКС КАРТЫ</span><p>Почитайте впечатления гостей о визитах, атмосфере и работе специалистов.</p><a class="review-inline-link" href="https://yandex.ru/maps/org/li_tsa/54770150446/" target="_blank" rel="noopener noreferrer">Перейти к отзывам <span aria-hidden="true">↗</span></a></div></div>
     </section>
 
     <section class="faq-section"><div class="page-wrap section faq-layout"><div><div class="section-kicker">06 — Вопросы и ответы</div><h2>Перед<br><em>первым визитом.</em></h2><p class="section-lead">Не нашли ответ? Позвоните в выбранную студию — администратор поможет.</p><button class="text-link open-booking" type="button">Связаться со студией <span aria-hidden="true">↗</span></button></div>
       <div class="faq-list">
-        <details><summary>Как понять, какая процедура мне подойдёт?<span>+</span></summary><p>Расскажите администратору, что именно вы ищете. Специалист уточнит пожелания и особенности, а перед началом объяснит выбранную технику. Если есть медицинские ограничения, сообщите о них заранее.</p></details>
-        <details><summary>Можно ли прийти один раз, не покупая курс?<span>+</span></summary><p>Да. Вы можете записаться на отдельную процедуру и после неё решить, хотите ли продолжить. Условия абонементов уточняются отдельно до покупки.</p></details>
-        <details><summary>Сколько стоит первый визит?<span>+</span></summary><p>Стоимость зависит от техники и категории специалиста. На странице указаны цены знакомства для отдельных процедур; администратор подтвердит точную цену и длительность до записи.</p></details>
-        <details><summary>Где находятся студии?<span>+</span></summary><p>Студии есть в Санкт-Петербурге и Омске. Выберите город в верхней части сайта — контакты и адрес обновятся.</p></details>
+        <details><summary>Как понять, какая процедура мне подойдёт?<span aria-hidden="true">+</span></summary><p>Расскажите администратору, что именно вы ищете. Специалист уточнит пожелания и особенности, а перед началом объяснит выбранную технику. Если есть медицинские ограничения, сообщите о них заранее.</p></details>
+        <details><summary>Можно ли прийти один раз, не покупая курс?<span aria-hidden="true">+</span></summary><p>Да. Вы можете записаться на отдельную процедуру и после неё решить, хотите ли продолжить. Условия абонементов уточняются отдельно до покупки.</p></details>
+        <details><summary>Сколько стоит первый визит?<span aria-hidden="true">+</span></summary><p>Стоимость зависит от техники и категории специалиста. На странице указаны цены знакомства для отдельных процедур; администратор подтвердит точную цену и длительность до записи.</p></details>
+        <details><summary>Где находятся студии?<span aria-hidden="true">+</span></summary><p>Студии есть в Санкт-Петербурге и Омске. Выберите город в верхней части сайта — контакты и адрес обновятся.</p></details>
       </div>
     </div></section>
 

@@ -22,6 +22,7 @@
   const dialogCity = document.querySelector('#dialog-city');
   const bookingDialog = document.querySelector('#booking-dialog');
   const footerLabel = document.querySelector('#footer-city-label');
+  const toplineCity = document.querySelector('#topline-city');
   const footerAddress = document.querySelector('#footer-address');
   const footerPhone = document.querySelector('#footer-phone');
   const dialogAddress = document.querySelector('#dialog-address');
@@ -32,6 +33,7 @@
     const city = cities[cityId] || cities.spb;
     citySelect.value = cityId in cities ? cityId : 'spb';
     dialogCity.value = cityId in cities ? cityId : 'spb';
+    toplineCity.textContent = `Выбрана студия: ${city.label}`;
     footerLabel.textContent = city.shortLabel;
     footerAddress.textContent = city.address;
     footerPhone.textContent = city.phone;
